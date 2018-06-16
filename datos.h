@@ -20,9 +20,9 @@ class Datos {
     const int * disfrute = (int []) {1, 1, 1, 1, 1, 1, 1, 1};
 
 
-                                                        // T   S   B   CC  P  CL   D   SM
+                                                         // T   S   B   CC  P  CL   D   SM
     const int ** espera = (const int *[])
-                                { /*0 9:00 */ (const int []) {1,  1,  2,  0,  0,  0,  0,  0},
+                              { /*0 9:00 */ (const int []) {1,  1,  2,  0,  0,  0,  0,  0},
                                 /*1 9:05 */ (const int []) {1,  1,  1,  0,  0,  0,  0,  0},
                                 /*2 9:10 */ (const int []) {1,  1,  0,  0,  0,  0,  0,  0},
                                 /*3 9:15 */ (const int []) {1,  2,  0,  0,  0,  1,  0,  0},

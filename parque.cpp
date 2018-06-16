@@ -34,11 +34,9 @@ int Parque::fase(const int** espera, int m, int n, const int* disfrute, const in
       return nvisitados;
     }
     if(j==sigma[i-1]){
-        sigma[i]=j+1;
-    }else{
-        sigma[i]=j;
+        ++j;
     }
-
+    sigma[i]=j;
     ++nvisitados;
 
 
@@ -47,7 +45,7 @@ int Parque::fase(const int** espera, int m, int n, const int* disfrute, const in
     }
 
     if(sigma[i]<(n+1)){
-        fase(espera, m, n, disfrute, traslado, suma+espera[suma][sigma[i]-1] + disfrute[sigma[i]-1] + traslado[sigma[i]][j-1], nvisitados, sigma, i+1, 1,solucion);
+        fase(espera, m, n, disfrute, traslado, suma+espera[suma][sigma[i]-1] + disfrute[sigma[i]-1] + traslado[sigma[i]][j], nvisitados, sigma, i+1, 1,solucion);
         if(sizeSol < nvisitados){
             sizeSol = nvisitados;
             solucion = sigma;
